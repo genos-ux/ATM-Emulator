@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ATM-Emulator/1.0.0": {
+        "runtime": {
+          "ATM-Emulator.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ATM-Emulator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

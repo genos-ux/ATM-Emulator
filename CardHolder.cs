@@ -44,7 +44,43 @@ namespace ATM_Emulator
         }
 
 
+        public string Pin
+        {
+            get => _pin;
+            set
+            {
+                if(isValidPin(_pin))
+                    value = _pin;
+
+                else
+                {
+                    throw new InvalidPinException("Invalid PIN. PIN must be a 4-digit number consisting of only numeric characters.");
+                }
+            }
+        }
+
+
+
 
         private bool isValidName(string name) => Regex.IsMatch(name, @"^[a-zA-Z\s]+$");
+
+        private bool isValidPin (string pin)
+        {
+            if(pin.Length == 4 && IsAllDigits(pin))
+                return true;
+
+            return false;
+        }
+
+        private bool IsAllDigits(string str)
+        {
+            foreach (char c in str)
+            {
+                if(!char.IsDigit(c))
+                    return false;
+            }
+
+            return true;
+        }
     }
 }

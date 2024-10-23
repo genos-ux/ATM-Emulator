@@ -1,0 +1,15 @@
+C:\Users\Mr Hihihi\Desktop\Console.Apps\ATM-Emulator\obj\Debug\net8.0\ATM-Emulator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mr Hihihi\Desktop\Console.Apps\ATM-Emulator\obj\Debug\net8.0\ATM-Emulator.AssemblyInfoInputs.cache
+C:\Users\Mr Hihihi\Desktop\Console.Apps\ATM-Emulator\obj\Debug\net8.0\ATM-Emulator.AssemblyInfo.cs
+C:\Users\Mr Hihihi\Desktop\Console.Apps\ATM-Emulator\obj\Debug\net8.0\ATM-Emulator.csproj.CoreCompileInputs.cache
+C:\Users\Mr Hihihi\Desktop\Console.Apps\ATM-Emulator\obj\Debug\net8.0\ATM-Emulator.sourcelink.json
+C:\Users\Mr Hihihi\Desktop\Console.Apps\ATM-Emulator\bin\Debug\net8.0\ATM-Emulator.exe
+C:\Users\Mr Hihihi\Desktop\Console.Apps\ATM-Emulator\bin\Debug\net8.0\ATM-Emulator.deps.json
+C:\Users\Mr Hihihi\Desktop\Console.Apps\ATM-Emulator\bin\Debug\net8.0\ATM-Emulator.runtimeconfig.json
+C:\Users\Mr Hihihi\Desktop\Console.Apps\ATM-Emulator\bin\Debug\net8.0\ATM-Emulator.dll
+C:\Users\Mr Hihihi\Desktop\Console.Apps\ATM-Emulator\bin\Debug\net8.0\ATM-Emulator.pdb
+C:\Users\Mr Hihihi\Desktop\Console.Apps\ATM-Emulator\obj\Debug\net8.0\ATM-Emulator.dll
+C:\Users\Mr Hihihi\Desktop\Console.Apps\ATM-Emulator\obj\Debug\net8.0\refint\ATM-Emulator.dll
+C:\Users\Mr Hihihi\Desktop\Console.Apps\ATM-Emulator\obj\Debug\net8.0\ATM-Emulator.pdb
+C:\Users\Mr Hihihi\Desktop\Console.Apps\ATM-Emulator\obj\Debug\net8.0\ATM-Emulator.genruntimeconfig.cache
+C:\Users\Mr Hihihi\Desktop\Console.Apps\ATM-Emulator\obj\Debug\net8.0\ref\ATM-Emulator.dll
