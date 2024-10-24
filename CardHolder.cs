@@ -18,7 +18,7 @@ namespace ATM_Emulator
             get => _firstName;
             set
             {
-                if(isValidName(_firstName) && _firstName.Length > 0)
+                if(isValidName(value) && value.Length > 0)
                 {
                     _firstName = value;
                 }
@@ -34,7 +34,7 @@ namespace ATM_Emulator
             get => _lastName;
             set
             {
-                if(isValidName(_lastName) && _lastName.Length > 0)
+                if(isValidName(value) && value.Length > 0)
                 {
                     _lastName = value;
                 }
@@ -51,8 +51,8 @@ namespace ATM_Emulator
             get => _pin;
             set
             {
-                if(isValidPin(_pin))
-                    value = _pin;
+                if(isValidPin(value))
+                    _pin = value;
 
                 else
                 {
@@ -61,7 +61,7 @@ namespace ATM_Emulator
             }
         }
 
-        public double Balance {get; set;}
+        private double Balance { get; set; }
 
         //CardHolder Methods
         public void Deposit()
@@ -87,12 +87,9 @@ namespace ATM_Emulator
             else
             {
                 this.Balance -= withdrawal;
-                Console.WriteLine("You are good to go: Thank you! ");
+                Console.WriteLine("You're good to go! Thank you : ");
 
             }
-
-
-
         }
 
         private bool isValidName(string name) => Regex.IsMatch(name, @"^[a-zA-Z\s]+$");

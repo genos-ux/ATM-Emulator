@@ -5,7 +5,7 @@ class Program
 {
     static void Main(string[] args)
     {
-
+       CardHolder cs = new CardHolder("Gabriel","Hill","1232");
 
         Console.ReadLine();
     }
@@ -19,5 +19,5 @@ class Program
         Console.WriteLine("4. Exit");
     }
 
-    
+
 }
