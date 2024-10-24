@@ -7,10 +7,12 @@ namespace ATM_Emulator
 {
     public class CardHolder
     {
+        //field data
         private string _firstName;
         private string _pin;
         private string _lastName;
 
+        //properties with setters and getters.
         public string FirstName
         {
             get => _firstName;
@@ -61,6 +63,7 @@ namespace ATM_Emulator
 
         public double Balance {get; set;}
 
+        //CardHolder Methods
         public void Deposit()
         {
             Console.WriteLine("How much $$ would you like to deposit? ");
@@ -68,6 +71,28 @@ namespace ATM_Emulator
             this.Balance += deposit;
 
             Console.WriteLine("Thank you for your $$$... Your new balance is {0}",this.Balance);
+        }
+
+        public void Withdraw()
+        {
+            Console.WriteLine("How much $$$ will you like to withdraw? ");
+            double withdrawal = Double.Parse(Console.ReadLine());
+
+            //Check if the user has enough money
+            if(withdrawal > this.Balance)
+            {
+                Console.WriteLine("Insufficient funds :(");
+            }
+
+            else
+            {
+                this.Balance -= withdrawal;
+                Console.WriteLine("You are good to go: Thank you! ");
+
+            }
+
+
+
         }
 
         private bool isValidName(string name) => Regex.IsMatch(name, @"^[a-zA-Z\s]+$");
