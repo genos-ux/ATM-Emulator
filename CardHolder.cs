@@ -59,8 +59,7 @@ namespace ATM_Emulator
             }
         }
 
-
-
+        public double Balance {get; set;}
 
         private bool isValidName(string name) => Regex.IsMatch(name, @"^[a-zA-Z\s]+$");
 
