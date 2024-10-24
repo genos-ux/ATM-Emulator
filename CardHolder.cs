@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
+using System.Random;
 
 namespace ATM_Emulator
 {
@@ -11,6 +12,7 @@ namespace ATM_Emulator
         private string _firstName;
         private string _pin;
         private string _lastName;
+        
 
         //properties with setters and getters.
         public string FirstName
