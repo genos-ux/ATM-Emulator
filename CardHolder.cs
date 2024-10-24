@@ -61,6 +61,15 @@ namespace ATM_Emulator
 
         public double Balance {get; set;}
 
+        public void Deposit()
+        {
+            Console.WriteLine("How much $$ would you like to deposit? ");
+            double deposit = Double.Parse(Console.ReadLine());
+            this.Balance += deposit;
+
+            Console.WriteLine("Thank you for your $$$... Your new balance is {0}",this.Balance);
+        }
+
         private bool isValidName(string name) => Regex.IsMatch(name, @"^[a-zA-Z\s]+$");
 
         private bool isValidPin (string pin)
