@@ -1,0 +1,30 @@
+# Visual Studio Code
+.vscode/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+
+# NuGet Packages
+*.nupkg
+**/packages/*
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Others
+*.db
+*.pdb
