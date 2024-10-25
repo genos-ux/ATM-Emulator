@@ -5,7 +5,27 @@ class Program
 {
     static void Main(string[] args)
     {
-       CardHolder cs = new CardHolder("Gabriel","Hill","1232");
+    //    CardHolder cs = new CardHolder("Gabriel","Hill","1232");
+
+        Console.WriteLine("Welcome to SimpleATM");
+        Console.WriteLine("Please insert your debit card: ");
+
+        string debitCardNum = "";
+        CardHolder currentUser;
+
+        while(true)
+        {
+            try
+            {
+                debitCardNum = Console.ReadLine();
+                //Check against our db
+                currentUser = UsersDB.users.FirstOrDefault(x => x.CardNum == debitCardNum);
+            }
+            catch()
+            {
+
+            }
+        }
 
         Console.ReadLine();
     }

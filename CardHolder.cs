@@ -12,7 +12,7 @@ namespace ATM_Emulator
         private string _firstName;
         private string _pin;
         private string _lastName;
-        
+
 
         //properties with setters and getters.
         public string FirstName
@@ -62,6 +62,8 @@ namespace ATM_Emulator
                 }
             }
         }
+
+        public string CardNum {get; set;}
 
         private double Balance { get; set; }
 
