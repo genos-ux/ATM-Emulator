@@ -50,6 +50,8 @@ class Program
                 Console.WriteLine("Card not recognized: {0}",ex.Message);
             }
         }
+
+        CheckPinNo();
     }
 
     static void CheckPinNo()
@@ -57,10 +59,13 @@ class Program
         string pinNo = "";
         CardHolder currentUser;
 
+        Console.WriteLine("Next insert your pin");
+        
         while(true)
         {
             try
             {
+
                 pinNo = Console.ReadLine();
                 //Check against our db
                 currentUser = UsersDB.users.FirstOrDefault(x => x.Pin == pinNo);
@@ -78,6 +83,8 @@ class Program
                 Console.WriteLine("Incorrect pin: {0}",ex.Message);
             }
         }
+
+        Console.WriteLine("Welcome {0}",currentUser.FirstName);
     }
 
 
