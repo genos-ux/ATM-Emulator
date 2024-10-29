@@ -15,15 +15,6 @@ class Program
         Console.ReadLine();
     }
 
-    static void PrintOptions()
-    {
-        Console.WriteLine("Please choose from one of the following options...");
-        Console.WriteLine("1. Deposit");
-        Console.WriteLine("2. Withdraw");
-        Console.WriteLine("3. Show Balance");
-        Console.WriteLine("4. Exit");
-    }
-
     static void CheckDebitCard()
     {
         string debitCardNum = "";
@@ -60,7 +51,7 @@ class Program
         CardHolder currentUser;
 
         Console.WriteLine("Next insert your pin");
-        
+
         while(true)
         {
             try
@@ -84,7 +75,43 @@ class Program
             }
         }
 
-        Console.WriteLine("Welcome {0}",currentUser.FirstName);
+        Console.WriteLine("Welcome {0} :)",currentUser.FirstName);
+
+        PrintOptions()
+    }
+
+    static void Print()
+    {
+        Console.WriteLine("Please choose from one of the following options...");
+        Console.WriteLine("1. Deposit");
+        Console.WriteLine("2. Withdraw");
+        Console.WriteLine("3. Show Balance");
+        Console.WriteLine("4. Exit");
+    }
+
+
+    static void PrintOptions(CardHolder user)
+    {
+        int option = Int.Parse(Console.ReadLine());
+
+        do
+        {
+            Print();
+
+            switch(option)
+            {
+                case 1 :
+                    user.Deposit();
+                    break;
+                case 2:
+                    user.Withdraw();
+                    break;
+                case 3:
+                    user.Balance;
+                    break;
+            }
+
+        }while(option != 4)
     }
 
 
