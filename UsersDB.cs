@@ -14,7 +14,7 @@ namespace ATM_Emulator
             new CardHolder {FirstName = "Dig", LastName = "Robert", Pin = "2215", CardNum = "6011000990139424"},
             new CardHolder {FirstName = "Ashley", LastName = "Jones", Pin = "7834", CardNum = "3530111333300000"},
             new CardHolder {FirstName = "Dawn", LastName = "Smith", Pin = "4845", CardNum = "4000519980003000"}
-        }
+        };
 
 
     }
