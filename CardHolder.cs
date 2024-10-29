@@ -65,7 +65,7 @@ namespace ATM_Emulator
 
         public string CardNum {get; set;}
 
-        private double Balance { get; set; }
+        public double Balance { get; set; }
 
         //CardHolder Methods
         public void Deposit()
@@ -74,7 +74,7 @@ namespace ATM_Emulator
             double deposit = Double.Parse(Console.ReadLine());
             this.Balance += deposit;
 
-            Console.WriteLine("Thank you for your $$$... Your new balance is {0}",this.Balance);
+            Console.WriteLine("Thank you for your $$$... Your new balance is ${0}",this.Balance);
         }
 
         public void Withdraw()

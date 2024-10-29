@@ -62,7 +62,12 @@ class Program
                 currentUser = UsersDB.users.FirstOrDefault(x => x.Pin == pinNo);
 
                 if(currentUser != null)
+                {
+                    Console.WriteLine("Welcome {0} :)",currentUser.FirstName);
+                    PrintOptions(currentUser);
+                    Console.WriteLine("Have a nice day, {0} :)",currentUser.FirstName);
                     break;
+                }
 
                 else
                 {
@@ -75,9 +80,6 @@ class Program
             }
         }
 
-        Console.WriteLine("Welcome {0} :)",currentUser.FirstName);
-
-        PrintOptions()
     }
 
     static void Print()
@@ -92,11 +94,12 @@ class Program
 
     static void PrintOptions(CardHolder user)
     {
-        int option = Int.Parse(Console.ReadLine());
+        int option = 0;
 
         do
         {
             Print();
+            option = int.Parse(Console.ReadLine());
 
             switch(option)
             {
@@ -107,11 +110,11 @@ class Program
                     user.Withdraw();
                     break;
                 case 3:
-                    user.Balance;
+                    Console.WriteLine("Show balance: ${0}",user.Balance);
                     break;
             }
 
-        }while(option != 4)
+        }while(option != 4);
     }
 
 
