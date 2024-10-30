@@ -65,7 +65,7 @@ namespace ATM_Emulator
 
         public string CardNum {get; set;}
 
-        public double Balance { get; set; }
+        public double Balance { get; set; } = 0.0;
 
         //CardHolder Methods
         public void Deposit()
