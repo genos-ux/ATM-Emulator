@@ -71,7 +71,7 @@ class Program
 
                 else
                 {
-                    Console.WriteLine("Incorrect pin. Try again");
+                    Console.WriteLine("Invalid PIN. Please enter a 4-digit PIN:");
                 }
             }
             catch(Exception ex)
@@ -84,9 +84,10 @@ class Program
 
     static void Print()
     {
+        Console.WriteLine("Authentication successful. Accessing your account...");
         Console.WriteLine("Please choose from one of the following options...");
-        Console.WriteLine("1. Deposit");
-        Console.WriteLine("2. Withdraw");
+        Console.WriteLine("1. Deposit cash");
+        Console.WriteLine("2. Withdraw cash");
         Console.WriteLine("3. Show Balance");
         Console.WriteLine("4. Exit");
     }
